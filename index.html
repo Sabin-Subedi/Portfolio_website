@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Sabin Subedi</title>
+    <link rel="shortcut icon" href="./images/logo2.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -14,10 +18,10 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="container-fluid px-5">
-        <div class="nav my-5 d-flex align-items-center justify-content-between">
-          <ul class="nav" id="myTab" role="tablist">
+    <nav id="nav">
+      <div class="container-fluid px-0 px-sm-3 px-md-5">
+        <div class="nav my-5 d-none d-sm-flex align-items-center">
+          <ul class="nav top" role="tablist">
             <li class="nav-item" role="presentation">
               <a
                 class="nav-link active"
@@ -33,11 +37,11 @@
             <li class="nav-item" role="presentation">
               <a
                 class="nav-link"
-                id="profile-tab"
+                id="about-tab"
                 data-toggle="tab"
-                href="#profile"
+                href="#about"
                 role="tab"
-                aria-controls="profile"
+                aria-controls="about"
                 aria-selected="false"
                 >About</a
               >
@@ -55,11 +59,91 @@
               >
             </li>
           </ul>
-          <div class="navbrand">Sabin Subedi</div>
+          <h1 class="navbrand text-center mx-auto my-0">Sabin Subedi</h1>
           <div class="nav-social-media">
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-full d-block d-sm-none px-4 container-fluid">
+        <div
+          class="nav-full-top d-flex align-items-center justify-content-between"
+        >
+          <h1 class="navbrand my-0 mr-auto">Sabin Subedi</h1>
+          <svg
+            id="ham"
+            class="ham ham6"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
+            />
+            <path
+              class="line middle"
+              d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"
+            />
+            <path
+              class="line bottom"
+              d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"
+            />
+          </svg>
+        </div>
+        <div class="nav-full-item">
+          <div
+            class="nav-full-item-links d-flex flex-column justify-content-center align-items-center d-none"
+          >
+            <div
+              class="nav full-nav-links d-flex flex-column text-center mb-5 py-5"
+              role="tablist"
+            >
+              <a
+                role="presentation"
+                class="nav-link active full-nav-item"
+                id="works-tab"
+                data-toggle="tab"
+                href="#work"
+                role="tab"
+                aria-controls="work"
+                aria-selected="true"
+                >Work</a
+              >
+              <a
+                class="nav-link full-nav-item"
+                id="abouts-tab"
+                data-toggle="tab"
+                href="#about"
+                role="tab"
+                aria-controls="about"
+                aria-selected="false"
+                role="presentation"
+                >About</a
+              >
+              <a
+                role="presentation"
+                class="nav-link full-nav-item"
+                id="contacts-tab"
+                data-toggle="tab"
+                href="#contact"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Contact</a
+              >
+            </div>
+            <div class="nav-social-media full-media">
+              <a href="http://www.youtube.com/c/BetterDev"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="https://www.facebook.com/sabin.subedi.737"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -73,17 +157,45 @@
           role="tabpanel"
           aria-labelledby="work-tab"
         >
-          <div class="row row-cols-1 row-cols-md-2">
+          <div class="my-5 py-5 text-center">
+            <h1
+              id="head"
+              class="head-text text-decoration text-underlined display-4"
+              style="font-weight: 300"
+            >
+              I <span style="font-weight: 600">AM</span> A WEB DEVELOPER<br />
+              Check Some of My <span style="font-weight: 600">Works</span>
+            </h1>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 mb-3">
             <div class="col mb-4 mb-lg-5">
               <div class="card px-0 py-0">
                 <img
-                  src="./images/React-App.png"
+                  src="./images/covid-19.png"
                   class="card-img-top"
-                  alt="./images/React-App.png"
+                  alt="covid-19"
                 />
                 <div class="card-body">
-                  <div class="card-text">
+                  <div class="card-text text-center justify-content-center">
                     <div class="card-title">COVID-19 Tracker</div>
+                    <div class="card-link">
+                      <p class="text-secondary">
+                        This is the Covid-19 Tracker made Using React, Material
+                        UI. I have used the disease.sh API to get the data.
+                      </p>
+                      <a
+                        class="text-secondary"
+                        href="https://covid-19-tracker-3ccbc.web.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                      <a
+                        class="text-secondary"
+                        href="https://github.com/Sabin-Subedi/COVID-19-Tracker"
+                        target="_blank"
+                        >View Source Code</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -91,13 +203,32 @@
             <div class="col mb-4 mb-lg-5">
               <div class="card px-0 py-0">
                 <img
-                  src="./images/React-App.png"
+                  src="./images/./websites/twitter-clone.png"
                   class="card-img-top"
                   alt="./images/React-App.png"
                 />
                 <div class="card-body">
-                  <div class="card-text">
-                    <div class="card-title">COVID-19 Tracker</div>
+                  <div class="card-text text-center justify-content-center">
+                    <div class="card-title">React Twitter Clone</div>
+                    <div class="card-link">
+                      <p class="text-secondary">
+                        This is the Twitter Clone made Using React, Material UI
+                        and Firebase is used for realtime database and
+                        deployment.
+                      </p>
+                      <a
+                        class="text-secondary"
+                        href="https://twiiter-clone-d98f6.web.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                      <a
+                        class="text-secondary"
+                        href="https://github.com/Sabin-Subedi/Twitter_Clone"
+                        target="_blank"
+                        >View Source Code</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -105,13 +236,27 @@
             <div class="col mb-4 mb-lg-5">
               <div class="card px-0 py-0">
                 <img
-                  src="./images/React-App.png"
+                  src="./images/websites/Adidas.png"
                   class="card-img-top"
-                  alt="./images/React-App.png"
+                  alt="Addidas Landing PAge"
                 />
                 <div class="card-body">
-                  <div class="card-text">
-                    <div class="card-title">COVID-19 Tracker</div>
+                  <div class="card-text text-center justify-content-center">
+                    <div class="card-title">Adidas Landing Page</div>
+                    <div class="card-link">
+                      <p class="text-secondary">
+                        This is the Adidas Landing Page made Using Html, CSS,
+                        Bootstrap and jQuery. This site is animted and made for
+                        my youtube channel.
+                      </p>
+                      <a
+                        class="text-secondary"
+                        href="https://adidas-landing-pa.web.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                      <a class="text-secondary" href="#">View Source Code</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -119,26 +264,485 @@
             <div class="col mb-4 mb-lg-5">
               <div class="card px-0 py-0">
                 <img
-                  src="./images/React-App.png"
+                  src="./images/websites/netflix-clone.png"
                   class="card-img-top"
                   alt="./images/React-App.png"
                 />
                 <div class="card-body">
-                  <div class="card-text">
-                    <div class="card-title">COVID-19 Tracker</div>
+                  <div class="card-text text-center justify-content-center">
+                    <div class="card-title">Netflix Clone</div>
+                    <div class="card-link">
+                      <p class="text-secondary">
+                        This is the Netflix Clone using HTML, CSS and
+                        Javascript. This is made for practise purpose.
+                      </p>
+                      <a
+                        class="text-secondary"
+                        href="https://netflix-css-clone.web.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                      <a
+                        class="text-secondary"
+                        href="https://github.com/Sabin-Subedi/Netflix_HTML_Clone"
+                        target="_blank"
+                        >View Source Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 mb-lg-5">
+              <div class="card px-0 py-0">
+                <img
+                  src="./images/websites/covid-landing.png"
+                  class="card-img-top"
+                  alt="./images/React-App.png"
+                />
+                <div class="card-body">
+                  <div class="card-text text-center justify-content-center">
+                    <div class="card-title">COVID-19 Landing Page</div>
+                    <div class="card-link">
+                      <p class="text-secondary">
+                        This is the Covid-19 landing page made using HTMl and
+                        CSS. This project is made for the content of my youtube
+                        channel.
+                      </p>
+                      <a
+                        class="text-secondary"
+                        href="https://covid-landing-68fc8.web.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                      <a
+                        class="text-secondary"
+                        href="https://www.patreon.com/posts/37882948"
+                        target="_blank"
+                        >View Source Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 mb-lg-5">
+              <div class="card px-0 py-0">
+                <img
+                  src="./images/websites/travel.png"
+                  class="card-img-top"
+                  alt="./images/React-App.png"
+                />
+                <div class="card-body">
+                  <div class="card-text text-center justify-content-center">
+                    <div class="card-title">Travel Landing Page</div>
+                    <div class="card-link">
+                      <p class="text-secondary">
+                        This is the Travel Landin Page made using HTML, CSS and
+                        Javascript. This site is made for the youtube channel
+                        content.
+                      </p>
+                      <a
+                        class="text-secondary"
+                        href="https://travel-landing.web.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                      <a
+                        class="text-secondary"
+                        href="https://www.patreon.com/posts/39548019"
+                        target="_blank"
+                        >View Source Code</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="footer-work text-center text-secondary my-5">
+            <p>Copygright-2020@SabinSubedi</p>
+          </div>
         </div>
         <div
           class="tab-pane fade"
-          id="profile"
+          id="about"
           role="tabpanel"
-          aria-labelledby="profile-tab"
+          aria-labelledby="about-tab"
         >
-          Hi
+          <div class="about container">
+            <h1
+              class="head-text my-5 display-4 text-center py-3"
+              style="font-weight: 600"
+            >
+              About Me
+            </h1>
+            <div class="row">
+              <div class="about-image col-12 col-md-5 mb-5 mt-4">
+                <img src="./images/about-image.jpg" alt="" />
+              </div>
+              <div class="about-text col-12 col-md-7 mb-5">
+                <h2 class="display-5">
+                  UI / UX Designer & Web Developer. Based in Nepal. I'm Code &
+                  Design things for web.
+                </h2>
+                <p class="">
+                  I'm a web designer & front‑end developer from Nepal focused on
+                  crafting clean & user‑friendly experiences, I am passionate
+                  about building excellent software that improves the lives of
+                  those around me.
+                </p>
+                <p class="">
+                  I'm very enthusiast about the Technology and Designs. I love
+                  what I do and want to be the par of the Global Tech community.
+                </p>
+              </div>
+            </div>
+            <h1
+              class="head-text display-4 font-weight-normal mb-4 text-center"
+              style="font-weight: 600"
+            >
+              Skills
+            </h1>
+            <div class="skills row mb-5">
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/html_css.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-baseline justify-content-between"
+                  >
+                    HTML/CSS
+                    <span class="" style="font-size: 1.2rem">90%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 90%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/javascript.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-end justify-content-between"
+                  >
+                    Javascript
+                    <span class="" style="font-size: 1.2rem">70%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 70%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/bootstrap.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-baseline justify-content-between"
+                  >
+                    Bootstrap
+                    <span class="" style="font-size: 1.2rem">80%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/sass.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-end justify-content-between"
+                  >
+                    Sass
+                    <span class="" style="font-size: 1.2rem">50%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 50%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/python.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-baseline justify-content-between"
+                  >
+                    Python
+                    <span class="" style="font-size: 1.2rem">85%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 85%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/react.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-end justify-content-between"
+                  >
+                    React
+                    <span class="" style="font-size: 1.2rem">70%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 70%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/materialui.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-baseline justify-content-between"
+                  >
+                    Material UI
+                    <span class="" style="font-size: 1.2rem">80%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/firebase.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-end justify-content-between"
+                  >
+                    Firebase
+                    <span class="" style="font-size: 1.2rem">60%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 60%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/illustrator.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-baseline justify-content-between"
+                  >
+                    Illustrator
+                    <span class="" style="font-size: 1.2rem">75%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/photoshop.svg"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-end justify-content-between"
+                  >
+                    Photoshop
+                    <span class="" style="font-size: 1.2rem">55%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 55%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img src="./images/skills_icons/xd.svg" style="width: 100%" />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-baseline justify-content-between"
+                  >
+                    Adobe XD
+                    <span class="" style="font-size: 1.2rem">85%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 85%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="skill-bar col-12 col-md-6 my-3 d-flex align-items-center"
+              >
+                <div class="col-2 col-md-2 skill-img px-1">
+                  <img
+                    src="./images/skills_icons/figma.svg"
+                    style="width: 60%"
+                  />
+                </div>
+                <div class="progress-section col-9 col-md-10 px-0">
+                  <h3
+                    class="head-text d-flex align-items-end justify-content-between"
+                  >
+                    Figma
+                    <span class="" style="font-size: 1.2rem">80%</span>
+                  </h3>
+                  <div class="progress shadow rounded-pill mt-0">
+                    <div
+                      class="progress-bar progress-bar-animated bg-secondary"
+                      role="progressbar"
+                      style="width: 80%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-work text-center text-secondary my-5">
+              <p>Copygright-2020@SabinSubedi</p>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -146,10 +750,54 @@
           role="tabpanel"
           aria-labelledby="contact-tab"
         >
-          Bye
+          <div
+            class="contact-text d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="text-white">
+              If you have any project idea then contact me:
+            </p>
+            <h1 class="text-white">sabinsubedi125@gmail.com</h1>
+            <h1 class="text-white">+977 9869-606910</h1>
+            <div
+              class="contact-info text-center text-white mt-5"
+              style="font-size: 1.5rem"
+            >
+              <h4>Find Me On:</h4>
+              <a
+                class="text-white"
+                href="https://www.facebook.com/sabin.subedi.737"
+                ><i class="fab fa-facebook mr-3"></i
+              ></a>
+              <a
+                class="text-white"
+                href="https://www.instagram.com/sabin_subeds/"
+                ><i class="fab fa-instagram mr-3"></i
+              ></a>
+              <a class="text-white" href="https://twitter.com/SabinSu82706618"
+                ><i class="fab fa-twitter mr-3"></i
+              ></a>
+              <a
+                class="text-white"
+                href=" https://www.linkedin.com/in/sabin-subedi-69517519a/"
+                ><i class="fab fa-linkedin mr-3"></i
+              ></a>
+              <a class="text-white" href="http://www.youtube.com/c/BetterDev"
+                ><i class="fab fa-youtube mr-3"></i
+              ></a>
+              <a class="text-white" href="https://github.com/Sabin-Subedi"
+                ><i class="fab fa-github mr-3"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+
+    <div class="back-to-top">
+      <a class="text-secondary" href="#nav"
+        ><i class="fal fa-arrow-circle-up"></i
+      ></a>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

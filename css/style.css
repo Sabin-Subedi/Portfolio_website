@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/fonts/Alaskan\ malamute.ttf") format("woff2"),
+    url("/fonts/Alaskan\ malamute.ttf") format("woff");
+}
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,25 +20,40 @@
 body {
   width: 100%;
   background-color: var(--background);
+  scroll-behavior: smooth;
+}
+.bg-red {
+  background-color: #b66969 !important;
+  color: #000 !important;
 }
 
-.nav-item .active {
+.top .nav-item .active {
   border-bottom: 1px solid black !important;
+}
+
+.bottom .nav-item {
+  text-decoration: underline;
 }
 
 .nav-link {
   color: var(--nav-item);
   padding: 0;
   margin: 0 5px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: var(--hover) !important;
 }
 
 .navbrand {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  font-family: "MyWebFont", "Dosis";
+  font-weight: 700;
 }
 
 .nav-social-media a {
-  color: #000;
+  color: var(--nav-item);
   font-size: 1.5rem;
   margin: 0 10px;
 }
@@ -45,15 +70,192 @@ body {
   width: 100%;
   background-color: var(--background);
   visibility: hidden;
+  transition: all ease-out 0.1s;
 }
 
 .card-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.card-link p {
+  font-size: 1.2rem;
+}
+
+.card-link a {
+  text-decoration: underline;
+}
+
+.card-link a:hover {
+  color: var(--nav-item) !important;
 }
 
 .card-title {
   font-size: 2rem;
+}
+
+.nav-social-media i:hover {
+  color: var(--hover);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  font-size: 3rem;
+  visibility: hidden;
+  opacity: 0.5;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.head-text {
+  font-family: "Dosis";
+}
+
+.nav-full {
+  position: relative;
+  top: 2rem;
+  height: 100%;
+}
+
+.ham-rule:nth-child(1) {
+  border-bottom: 1px solid #000;
+  width: 50px;
+  animation: rotate 1s ease;
+  transform: translateY(-15px);
+}
+
+.ham-rule:nth-child(2) {
+  border-bottom: 1px solid #000;
+  width: 50px;
+  animation: rotatereverse 1s ease initial;
+}
+
+.nav-full-item-links {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  visibility: hidden;
+  z-index: 100;
+  background: var(--background);
+}
+
+.full-nav-item {
+  font-size: 3rem;
+  font-family: "Dosis";
+  font-weight: bold;
+  color: var(--nav-item) !important;
+}
+
+.full-media {
+  color: var(--nav-item) !important;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.animation {
+  animation: upward 0.3s ease-in;
+}
+
+@keyframes upward {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(20px);
+    opacity: 0.6;
+  }
+}
+
+.down {
+  animation: down 0.3s ease-out;
+}
+
+@keyframes down {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--nav-item);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+.color-white {
+  color: white !important;
+}
+
+.contact-text {
+  height: 70vh;
+}
+
+.contact-info a {
+  font-size: 2rem;
+}
+.contact-info a i:hover {
+  color: aqua;
 }
